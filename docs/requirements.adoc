@@ -1,0 +1,37 @@
+= *Requirements*
+
+
+
+== *Use Cases*
+
+
+
+=== _Dock Worker Use Case_
+image::/assets/dock_worker_UC.svg[]
+=== _Vendor Use Case_
+image::/assets/dock_worker_UC_2.svg[]
+=== _Dock  Use Case_
+image::/assets/dock_worker_UC_3.svg[]
+=== _Appointment  Use Case_
+image::/assets/dock_worker_UC_4.svg[]
+
+
+== *User Stories*
+
+As the Dock Manager I want to be able to create an appointment for a vendor so that a vendor can drop off their shipment
+
+As the Dock Manager I want to be able to edit an appointment for a vendor so if the vendor needs to change the deliver time or add new workers to the appointment they may do so
+
+As the Dock Manager I want to be able to archive an appointment  so I can hide the appointment from the list of all appointment, but still be able to retain a record of that appointment for reporting purposes
+
+As the Dock manager I want to be able to Add a new dock worker so that I can add new employees to the system so that they may be scheduled for a dock
+
+As the Dock Manager I want to be able to edit a worker  so if the worker data changes I can update their records in the system
+
+As the Dock Manager I want to be able to archive worker so if the worker leaves the company I can remove them form the system view but still retain a record of their appointments for reporting purposes
+
+As the Dock manager I want to be able to Add a new vendor so that I can assign a vendor to the system so that they may be able to create an appointment
+
+As the Dock Manager I want to be able to edit a vendor so if the vendor info changes I can update their records in the system
+
+As the Dock Manager I want to be able to archive vendors so if the vendor no longer wishes to deliver to us i can remove them form the system view but still retain a record of their appointments for reporting purposes

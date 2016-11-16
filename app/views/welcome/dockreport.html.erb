@@ -1,0 +1,88 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="padding-bottom: 0px">Dock Usage Reports</h1>
+<h4 style="text-align: center" > This report will show:</h4>
+<ul>
+  <li>The % of time that each dock is in use</li>
+  <li>The total number of appointments</li>
+  <li>The total dock worker payroll for that dock</li>
+  <li>The average dock worker payroll per appointment for that dock</li>
+</ul>
+
+
+
+
+<br>
+<h2 style="text-align: center"> Please select date range</h2>
+<br>
+<br>
+
+
+<div style="color: black; display: flex;
+    align-items: center;" >
+  <br/>
+
+  <%= form_tag welcome_dockreport_path,  method: :get  do %>
+      <%= date_field_tag 'search[start_date]', @search.start_date %>
+      <%= date_field_tag 'search[end_date]', @search.end_date %>
+      <%= submit_tag 'Search' , class: 'btn search-button' %>
+  <% end %>
+
+
+
+
+</div>
+
+<div id="display_result">
+  <table>
+    <thead class="table_head">
+    <tr>
+      <br/>
+      <br/>
+      <th>Dock Name</th>
+      <th>Total Appointments</th>
+      <th>Total workers</th>
+      <th>Total Payroll</th>
+      <th>Average Payroll per appointment</th>
+      <th>Percent in use</th>
+
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+
+
+
+    <% @dockw.each do |dockw| %>
+
+        <td><%= dockw.name %></td>
+        <td><%= dockw.Apps %></td>
+          <td><%= dockw.TotalW %></td>
+          <td>$ <%= dockw.Payroll %></td>
+          <td>$ <%= dockw.Payavg   %></td>
+
+          <td><%=  number_with_precision((dockw.Apps) / (@count.to_f) * 100 , :precision => 1) %>%</td>
+
+        </tr>
+
+
+    <% end %>
+
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%= link_to 'Home', welcome_home_path, class: 'btn-index' %>

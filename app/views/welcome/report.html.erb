@@ -1,0 +1,91 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="padding-bottom: 0px">Dock Worker Reports</h1>
+<h4 style="text-align: center" > This report will show the hours worked for each worker over a selectable timeframe, as well as the pay due for work performed.</h4>
+<br>
+<br>
+<h2 style="text-align: center"> Please select date range</h2>
+<br>
+<br>
+
+
+<div style="color: black; display: flex;
+     align-items: center;" >
+  <br/>
+
+   <%= form_tag welcome_report_path,  method: :get  do %>
+    <%= date_field_tag 'search[start_date]', @search.start_date %>
+      <%= date_field_tag 'search[end_date]', @search.end_date %>
+      <%= submit_tag 'Search' , class: 'btn search-button' %>
+<% end %>
+
+
+
+</div>
+
+
+<div id="display_result">
+<table>
+  <thead class="table_head">
+  <tr>
+    <br/>
+    <br/>
+    <th>Worker Name</th>
+    <th>Appointment Date</th>
+    <th>Pay rate per Hour</th>
+
+
+  </tr>
+  </thead>
+
+  <tbody>
+<% @worker.each do |worker| %>
+      <tr>
+
+      <td><%= worker.name %></td>
+        <td><%= worker.App_Date %></td>
+      <td>$ <%= worker.payrate %></td>
+      </tr>
+
+<% end %>
+  </tbody>
+</table>
+
+
+
+  <table>
+    <thead class="table_head">
+    <tr>
+      <br/>
+      <br/>
+      <br/>
+      <th>Worker Name</th>
+      <th>Total Appointments</th>
+      <th>Total Pay</th>
+
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @workerTA.each do |worker| %>
+        <tr>
+          <td><%= worker.name %></td>
+          <td><%= worker.Apps %></td>
+          <td>$ <%=  worker.Apps * worker.payrate %></td>
+
+        </tr>
+
+    <% end %>
+    </tbody>
+  </table>
+
+
+
+
+
+</div>
+<br/>
+<br/>
+<br/>
+<%= link_to 'Home', welcome_home_path %>

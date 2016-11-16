@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: Cowboys22
+  host: localhost
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: cis4338_development
+  pool: 5
+  username: postgres
+  password: Cowboys22
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: cis4338_production
+  pool: 5
+  username: postgres
+  password: Cowboys22

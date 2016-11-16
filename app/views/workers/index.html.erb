@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Workers</h1>
+
+
+ <p style="text-align: center"> <%= link_to 'New Worker', new_worker_path, class: "new_btn" %></p>
+<br>
+<br>
+
+<table>
+  <thead class="table_head">
+
+    <tr>
+
+      <th>Name</th>
+
+
+
+    </tr>
+
+  </thead>
+
+  </table>
+<br>
+
+  <div id="scroll">
+    <table>
+  <tbody >
+    <% @worker.each do |worker| %>
+      <tr>
+        <td col width="450"><%= worker.name %></td>
+
+        <td col width="55"><%= link_to 'Detail', worker, :remote => true, class: 'btn-index' %></td>
+        <td col width="55"><%= link_to 'Edit', edit_worker_path(worker), class: 'btn-index' %></td>
+        <td ><%= link_to 'Archive', worker, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn-index' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<div id="worker_content"></div>

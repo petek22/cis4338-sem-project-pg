@@ -1,0 +1,49 @@
+<%= form_for(worker) do |f| %>
+  <% if worker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(worker.errors.count, "error") %> -- Khhhaaaaaaannn! Worker not saved!</h2>
+
+      <ul>
+      <% worker.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+  </div>
+
+  <div class="field">
+
+    <%= f.label :state %>
+    <%= f.select :state, %w{AL AK AZ AR CA CO CT DC DE FL GA HI ID IL IN IA KS KY LA ME MA MI MN MO MS
+MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VA VT WA WI WV WY} %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zip %>
+    <%= f.text_field :zip %>
+  </div>
+
+  <div class="field">
+    <%= f.label :payrate %>
+    <%= f.text_field :payrate %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+app1:
+  start_date: 2016-10-28
+  start_time: 8am
+  dock_id: 2
+  vendor_id: 1
+
+
+two:
+  start_date: 2016-10-06 14:14:21
+  start_time: 2016-10-06 14:14:21
+  dock_id: 1
+  vendor_id: 1

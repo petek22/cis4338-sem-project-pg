@@ -1,0 +1,28 @@
+
+
+= Post Mortem
+
+
+My first impressions of the ROR language was this will make life easier when programming web applications, but as I got into the actual programming of the project I found it confusing and hard to decipher how to get it to do what I want. It seems you have to touch 3 different areas for every feature of the project, hence the MVC design. Personally I do not like to the MVC architecture, comparing it to JAVA. I would prefer to program in JAVA. To me JAVA is more straight forward, but that’s just me. My opinion of the language does not take away from the course itself.
+
+In going through the project I kept going back to the JAVA class and how we went about learning JAVA. The way the JAVA class was structured and designed and the homework lent itself to me learning that language faster and easier than ROR.  I would suggest this class be designed a little different. I would of liked to of had weekly small assignments that would mimic specific parts of the project and would of liked to have not used the scaffolding. I think scaffolding sort of skipped over some key things that would have been beneficial during the initial introduction to the language.
+
+One of the more difficult portions of the project was ActiveRecord. I found this hard and confusing. I would much rather take the time to write SQL code than try to figure out the very specific way active record is coded when trying to retrieve data from the tables. This has no bearing on the course itself, which I enjoyed, but points to me not liking the language.
+
+Some things I would change about the course:
+
+* I would like to see small weekly assignments built on top of each other designed to progress through learning cycle. For me personally this is the best way that I learn.
+
+* Do away with the Agile part of the course. This course should be strictly programming and less focused on the Software development cycle.
+
+* Adapt a formal book and follow along with the book.
+
+* More time focused on JavaScript.  At least 3 or 4 weeks.
+
+Some things I liked about the course:
+
+* I liked the individual project philosophy vs a group project. This enables me to work at a pace I want.
+
+* I like the teaching methodology in respect to actually watching code examples, this is one of the best ways for me to learn. Actually seeing examples on the screen.
+
+* I like the course as a whole and enjoyed coming to class everynight

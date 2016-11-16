@@ -1,0 +1,158 @@
+= User Manual
+
+
+Welcome to the Dock Worker management system. This system is will allow you to manage dock
+workers, create docks, create appointments for vendors as well as input vendors.
+
+
+
+== Navigating  the website
+
+Every page in the website has a navigation bar at the top. from here you can select the places you want to go as well
+as back to the home page by clicking the "CIS4339 Project" logo in the upper left hand
+corner of the page.
+
+image::/assets/title.logo.png[]
+
+To go to specific areas of the website there is a dropdown menu where you can choose your option for what operation you want to do
+
+image::/assets/menu.png[]
+
+=== _Managing Dock Workers_
+
+In this section you will lean how to manage the dock workers within the system.
+
+=== _Create a new Dock Worker_
+
+To create a new dock work please select the  "Go TO" drop down menu item from the navigation bar and then select "Dock Workers"
+
+This will take you to the main dock workers page. Select the "new dock worker" button. Then fill out the appropriate info for the new dock worker and click "Create Dock Worker"
+If the new worker was successfully created you will receive a confirmation.
+
+==== _Edit or Archive a Dock Worker_
+
+From the main Dock Worker screen. Click the "edit" or "delete" button to the right of the dock work you which to edit or archive. If you select the edit button you will be taken to another web page where you are able to edit their info.
+Once done editing select the "update" button and the info will be updated.
+
+* Archive Dock Worker
+
+If you should choose the archive button, a confirmation will pop up asking if you are sure. if you still want to archive, then select OK, if you change your mind select cancel
+Archiving does not delete a Dock Worker, but hides them from the display. This is done for reporting purposes.
+
+
+
+
+=== _Managing Vendors_
+
+In this section you will learn how to manage the Vendors within the system.
+
+=== _Create a Vendor_
+
+To create a Vendor work please select the  "Go TO" drop down menu item from the navigation bar and then select "Vendors"
+
+This will take you to the main Vendors page. Select the "new Vendors" button. Then fill out the appropriate info for the new Vendors and click "Create Vendor"
+If the Vendors was successfully created you will receive a confirmation.
+
+==== _Edit or Archive Vendor_
+
+From the main Vendors screen. Click the "edit" or "delete" button to the right of the Vendor you which to edit or archive. if you select the edit button you will be taken to another web page where you are able to edit their info,
+Once done editing select the "update" button and the info will be updated.
+
+
+* Archive Vendor
+
+    If you should choose the archive button, a confirmation will pop up asking if you are sure. If you still want to archive, then select OK, if you change your mind select cancel
+    Archiving does not delete a vendor, but hides them from the display. This is done for reporting purposes.
+
+
+=== _Managing Docks_
+
+In this section you will learn how to manage the docks within the system.
+
+=== _Create a new Dock Worker_
+
+To create a new dock  please select the  "Go TO" drop down menu item from the navigation bar and then select "Docks"
+
+This will take you to the main docks page. Select the "new dock" button. Then fill out the appropriate info for the new dock and click "Create Dock"
+If the new dock was successfully created you will receive a confirmation.
+*You can also set if the dock will be active or not. A non-active dock will not show up on the appointment page when creating appointments
+
+==== _Edit or Archive a Dock_
+
+From the main Dock Worker screen. click the "edit" or "delete" button to the right of the dock  you which to edit or archive. If you select the edit button you will be taken to another web page where you are able to edit the info,
+Once done editing select the "update" button and the info will be updated.
+
+* *Archive Docks*
+
+    If you should choose the archive button, a confirmation will pop up asking if you are sure. If you still want to archive, then select OK, if you change your mind select cancel
+    Archiving does not delete a Dock, but hides them from the display. This is done for reporting purposes.
+
+
+
+* *Active or not-active*
+
+    you can also set a dock to active or not-active. This if done so if a dock is damaged it can be taken out of service. a non-active dock will not show up on the appointments page
+
+
+
+
+== _Creating appointments_
+
+** *Appointments are created in one hour blocks*
+
+To create a new appointment  please select the  "Go TO" drop down menu item from the navigation bar and then select "Appointments"
+
+This will take you to the appointment  page. Select the "new appointment" button. Then fill out the appropriate info for the new appointment and click "Create appointment"
+If the new appointment was successfully created you will receive a confirmation.
+
+If you select an appointment time, date or if aa worker is unavailable for that appointment time you will receive an error message and you will have to choose a different time, date or workers.
+
+=== _Edit or Archive an Appointment_
+
+From the main Appointment screen. Click the "edit" or "delete" button to the right of the Appointment you which to edit or archive. If you select the edit button you will be taken to another web page where you are able to edit the info,
+Once done editing select the "update" button and the info will be updated.
+
+    * *Archive Appointment*
+
+If you should choose the archive button, a confirmation will pop up asking if you are sure. If you still want to archive, then select OK, if you change your mind select cancel
+Archiving does not delete an Appointment, but hides them from the display. This is done for reporting purposes.
+
+
+
+
+Archiving does not delete an Appointment, but hides them from the display. This is done for reoprting purposes.
+
+
+== Running Reports
+
+There are 2 reports that can be run from the *Reports* Tab on the navigation menu
+
+* *Dock Usage report*
+* *Dock Worker report*
+
+
+=== Dock Usage report
+    Here you will choose a date range from the drop down menu to produce a report that will show the following:
+
+
+
+    * the % of time that each dock is in use
+
+    * the total number of appointments
+
+    * the total dock worker payroll
+
+    * the average dock worker payroll per appointment
+
+
+=== Dock Worker report
+    Here you will choose a date range from the drop down menu to produce a report that will show the following:
+
+
+
+    * hours worked for each worker
+
+    * pay due for work performed
+
+
+

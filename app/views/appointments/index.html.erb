@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Appointments</h1>
+<%= link_to 'New Appointment', new_appointment_path, class: "new_btn" %>
+<br>
+<br>
+<br>
+<br>
+
+<table>
+  <thead>
+  <col width="200">
+    <tr>
+      <th>Appointment ID</th>
+      <th col width="175">Start date</th>
+      <th col width="200">Start Time</th>
+      <th>Vendor</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+</table>
+
+
+  <div id="scroll">
+  <table>
+  <tbody>
+    <% @appointments.each do |appointment| %>
+      <tr>
+        <td col width="200"><%= appointment.id %></td>
+        <td><%= appointment.start_date %></td>
+        <td col width="200"><%= appointment.start_time %></td>
+        <td><%= appointment.vendor.name %></td>
+
+
+
+
+        <td col width="55"><%= link_to 'Detail', appointment, class: 'btn-index', :remote => true %></td>
+        <td col width="45"><%= link_to 'Edit', edit_appointment_path(appointment), class: 'btn-index' %></td>
+        <td><%= link_to 'Archive',  appointment,  method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn-index' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+</div>
+
+
+<div id="content"></div>

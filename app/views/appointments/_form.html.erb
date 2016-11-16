@@ -1,0 +1,61 @@
+<%= form_for(appointment) do |f| %>
+  <% if appointment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(appointment.errors.count, "error") %>  -- Khhhaaaaaaannn! Appointment not saved!</h2>
+
+      <ul>
+      <% appointment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+
+      <%= f.label :vendor_id %>
+      <%= f.collection_select :vendor_id,Vendor.all, :id, :name %>
+      <br><br>
+    </div>
+
+    <div class="field">
+    <%= f.label :start_date %>
+   <div id="startdate">
+    <%= f.date_field( :start_date)%>
+  </div>
+    </div>
+
+  <div class="field">
+    <%= f.label :start_time %>
+    <%= f.select :start_time, %w{8am 9am 10am 11am 12pm 1pm 2pm 3pm 4pm 5pm 6pm} %>
+  </div>
+
+
+
+
+
+    <div class="field">
+
+
+      <%= f.label "Workers Available" %>
+      <%= collection_select(:workers,:id, @all_workers,:id, :name,{},{:multiple => true})%>
+
+
+
+    </div>
+
+
+
+    <div class="field">
+    <%= f.label "Docks Available" %>
+    <%= f.collection_select :dock_id, @dock_active,  :id,:name %>
+
+    </div>
+    <br><br>
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

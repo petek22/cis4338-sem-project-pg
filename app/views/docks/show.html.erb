@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dock.name %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @dock.available %>
+</p>
+
+<%= link_to 'Edit', edit_dock_path(@dock),class: 'btn-back' %> |
+<%= link_to 'Back', docks_path,class: 'btn-back' %>
