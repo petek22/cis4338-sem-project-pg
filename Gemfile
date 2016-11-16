@@ -53,7 +53,7 @@ end
 
 group :production do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
+
   gem  'rails_12factor'
 
 end
