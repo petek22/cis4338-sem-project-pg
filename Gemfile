@@ -33,7 +33,7 @@ gem 'asciidoctor'
 # gem 'capistrano-rails', group: :development
 gem 'pg'
 
-gem  'rails_12factor'
+
 
 
 
@@ -41,12 +41,20 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 
+
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
+  gem  'rails_12factor'
 
+end
+
+group :production do
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console'
+  gem  'rails_12factor'
 
 end
 
