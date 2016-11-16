@@ -33,6 +33,8 @@ gem 'asciidoctor'
 # gem 'capistrano-rails', group: :development
 gem 'pg'
 
+gem  'rails_12factor'
+
 
 
 group :development, :test do
