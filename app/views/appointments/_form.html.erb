@@ -37,7 +37,7 @@
     <div class="field">
 
 
-      <%= f.label "Workers Available" %>
+      <%= f.label "Workers Available (select more than one by holding down CTRL)" %>
       <%= collection_select(:workers,:id, @all_workers,:id, :name,{},{:multiple => true})%>
 
 
